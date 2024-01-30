@@ -1,18 +1,19 @@
 package com.backend.pruebaIteria.model;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
+
+import java.io.Serializable;
 
 @Getter
+@Data
+@Builder
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
 @Table(name = "TIPO_DOCUMENTO")
-public class TipoDocumento {
+public class TipoDocumento implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "TDC_ID", nullable = false)

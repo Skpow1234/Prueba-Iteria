@@ -1,15 +1,14 @@
 package com.backend.pruebaIteria.DTO;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import java.util.Date;
 
 @Getter
+@Data
+@Builder
 @Setter
-@AllArgsConstructor
 @NoArgsConstructor
+@AllArgsConstructor
 public class ContratoDTO {
     private String id;
     private AfiliadoDTO afiliado;

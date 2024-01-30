@@ -1,13 +1,12 @@
 package com.backend.pruebaIteria.DTO;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 @Getter
+@Data
+@Builder
 @Setter
-@AllArgsConstructor
 @NoArgsConstructor
+@AllArgsConstructor
 public class TipoDocumentoDTO {
     private String id;
     private String nombre;
